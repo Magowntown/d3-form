@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliverable 3: Form v0</title>
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+
+  <body>
+
+    <h1>These are the forms, now sign away your rights!</h1>
+
+    <p style="text-decoration: underline;">Please provide your name</p>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Your"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Butt"><br><br>
+    </form>
+
+    <p style="text-decoration: underline;">Please provide your favorite animal</p>
+    <form style="margin-bottom: 30px;">
+      <label for="animals">Choose your Favorite Animel:</label>
+      <select id="animals" name="animals">
+        <option value="volvo">Cat</option>
+        <option value="saab">Dog</option>
+        <option value="fiat">Fish</option>
+        <option value="audi">Bird</option>
+      </select>
+    </form>
+
+    <p style="text-decoration: underline;">Please provide your Mood</p>
+    <form>
+      <input type="radio" id="good" name="mood" value="good">
+      <label for="good">Good</label><br>
+      <input type="radio" id="med" name="mood" value="med">
+      <label for="meh">Meh</label><br>
+      <input type="radio" id="poopy" name="mood" value="poopy">
+      <label for="poopy">Poopy</label>
+    </form>
+
+    <p style="text-decoration: underline;">Please Select Which Languages You
+      Expect to Master?</p>
+    <form>
+      <input type="checkbox" id="HTML" name="HTML" value="HTML">
+      <label for="HTML"> HTML</label><br>
+      <input type="checkbox" id="CSS" name="CSS" value="CSS">
+      <label for="CSS">CSS</label><br>
+      <input type="checkbox" id="Javascript" name="Javascript" value="CSS">
+      <label for="Javascript">JavaScript</label><br>
+      <input type="checkbox" id="AllTheAbove" name="AllTheAbove"
+        value="AllTheAbove">
+      <label for="AllTheAbove">All The Above</label><br><br>
+    </form>
+
+    <form style="padding: 40px;">
+      <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
