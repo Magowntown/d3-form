@@ -4,62 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deliverable 3: Form v0</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Deliverable 3: Forms</title>
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
+  <body class="bg-white dark:bg-gray-800">
 
-    <h1>These are the forms, now sign away your rights!</h1>
+    <!-- TEXT Input Form -->
+    <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md
+      dark:bg-gray-800">
+      <h2 class="text-lg font-semibold text-gray-700 capitalize
+        dark:text-white">HTML Form Practice</h2>
 
-    <p style="text-decoration: underline;">Please provide your name</p>
+      <form>
+        <div class="grid grid-cols-1 gap-6 mt-4 p-6 sm:grid-cols-2
+          border-4 border-solid rounded-t-lg">
+          <div>
+            <label class="text-gray-700 dark:text-gray-200" for="username">Username</label>
+            <input id="username" type="text" class="block w-full px-4 py-2 mt-2
+              text-gray-700 bg-white border border-gray-200 rounded-md
+              dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600
+              focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40
+              dark:focus:border-blue-300 focus:outline-none focus:ring">
+          </div>
+
+          <div>
+            <label class="text-gray-700 dark:text-gray-200" for="emailAddress">Email
+              Address</label>
+            <input id="emailAddress" type="email" class="block w-full px-4 py-2
+              mt-2 text-gray-700 bg-white border border-gray-200 rounded-md
+              dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600
+              focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40
+              dark:focus:border-blue-300 focus:outline-none focus:ring">
+          </div>
+
+          <div>
+            <label class="text-gray-700 dark:text-gray-200" for="password">Password</label>
+            <input id="password" type="password" class="block w-full px-4 py-2
+              mt-2 text-gray-700 bg-white border border-gray-200 rounded-md
+              dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600
+              focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40
+              dark:focus:border-blue-300 focus:outline-none focus:ring">
+          </div>
+
+          <div>
+            <label class="text-gray-700 dark:text-gray-200"
+              for="passwordConfirmation">Password Confirmation</label>
+            <input id="passwordConfirmation" type="password" class="block w-full
+              px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200
+              rounded-md dark:bg-gray-800 dark:text-gray-300
+              dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300
+              focus:ring-opacity-40 dark:focus:border-blue-300
+              focus:outline-none focus:ring">
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- DROPDOWN Input Form -->
+    <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md
+      dark:bg-gray-800">
+      <h2 class="text-lg font-semibold text-gray-700 capitalize
+        dark:text-white">Pet Selection</h2>
+
+      <form>
+        <div class="grid grid-cols-1 gap-6 mt-4 p-6
+          sm:grid-cols-2
+          border-4 border-solid rounded-lg">
+          <div class="grid content-center">
+            <h2 class="text-3xl
+              text-center
+              text-gray-700
+              dark:text-gray-200"
+              for="pet">Choose
+              your Pet!</h2>
+          </div>
+
+          <div>
+            <label class="text-gray-700 dark:text-gray-200"
+              for="passwordConfirmation">Select Here</label>
+            <select id="petChoice" class="block w-full
+              px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200
+              rounded-md dark:bg-gray-800 dark:text-gray-300
+              dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300
+              focus:ring-opacity-40 dark:focus:border-blue-300
+              focus:outline-none focus:ring">
+              <option value="none" disabled selected>Select One</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="bird">Bird</option>
+              <option value="fish">Fish</option>
+            </select>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    <!--RADIO Input Form  -->
+    <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md
+      dark:bg-gray-800">
+      <h2 class="text-lg font-semibold text-gray-700 capitalize
+        dark:text-white">CSS Frameworks</h2>
+
+      <form>
+        <div class="grid grid-cols-1 gap-6 mt-4 p-6
+          sm:grid-cols-2
+          border-4 border-solid rounded-lg">
+          <div class="grid content-center justify-end">
+            <h2 class="text-3xl
+              text-center
+              text-gray-700
+              dark:text-gray-200"
+              for="framework">Favorite CSS Framework?</h2>
+          </div>
+
+          <div class="grid grid-cols-2 content-center">
+            <div class="flex justify-center ml-10">
+              <input type="radio" id="tailwindcss" name="fav_framework"></input>
+            </div>
+            <div class="flex-auto">
+              <label class="text-gray-700 dark:text-gray-200"
+                for="tailwindcss">TailwindCss</label><br>
+            </div>
+            <div class="flex justify-center ml-10">
+                <input type="radio" id="bootstrap" name="fav_framework"></input>
+            </div>
+            <div class="flex-auto">
+              <label class="text-gray-700 dark:text-gray-200"
+                for="bootstrap">Bootstrap</label><br>
+            </div>
+            <div class="flex justify-center ml-10">
+              <input type="radio" id="foundation" name="fav_framework"></input>
+            </div>
+            <div class="flex-auto">
+              <label class="text-gray-700 dark:text-gray-200"
+                for="foundation">Foundation</label><br>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- CHECKBOX Input Form -->
+    <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md
+    dark:bg-gray-800">
+    <h2 class="text-lg font-semibold text-gray-700 capitalize
+      dark:text-white">Coding Language</h2>
+
     <form>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="Your"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Butt"><br><br>
-    </form>
+      <div class="grid grid-cols-1 gap-6 mt-4 p-6
+        sm:grid-cols-2
+        border-4 border-solid rounded-b-lg">
+        <div class="grid content-center justify-end">
+          <h2 class="text-3xl
+            text-center
+            text-gray-700
+            dark:text-gray-200"
+            for="codelearn">What are you excited to learn?</h2>
+        </div>
 
-    <p style="text-decoration: underline;">Please provide your favorite animal</p>
-    <form style="margin-bottom: 30px;">
-      <label for="animals">Choose your Favorite Animel:</label>
-      <select id="animals" name="animals">
-        <option value="volvo">Cat</option>
-        <option value="saab">Dog</option>
-        <option value="fiat">Fish</option>
-        <option value="audi">Bird</option>
-      </select>
-    </form>
+        <div class="grid grid-cols-2 content-center">
+          <div class="flex justify-end">
+            <label class="text-gray-700 dark:text-gray-200"
+              for="javascript">JavaScript</label><br>
+          </div>
+          <div class="flex justify-center mr-10">
+            <input type="checkbox" id="javascriptInput" name="fav_framework"></input>
+          </div>
+          <div class="flex justify-end">
+            <label class="text-gray-700 dark:text-gray-200"
+              for="cssInput">CSS</label><br>
+          </div>
+          <div class="flex justify-center mr-10">
+              <input type="checkbox" id="cssInput" name="fav_framework"></input>
+          </div>
+          <div class="flex justify-end">
+            <label class="text-gray-700 dark:text-gray-200"
+              for="htmlInput">HTML</label><br>
+          </div>
+          <div class="flex justify-center mr-10">
+            <input type="checkbox" id="htmlInput" name="fav_framework"></input>
+          </div>
+          <div class="flex justify-end">
+            <label class="text-gray-700 dark:text-gray-200"
+              for="allabove">All of the Above</label><br>
+          </div>
+          <div class="flex justify-center mr-10">
+            <input type="checkbox" id="allabove" name="fav_framework"></input>
+          </div>
+        </div>
+      </div>
 
-    <p style="text-decoration: underline;">Please provide your Mood</p>
-    <form>
-      <input type="radio" id="good" name="mood" value="good">
-      <label for="good">Good</label><br>
-      <input type="radio" id="med" name="mood" value="med">
-      <label for="meh">Meh</label><br>
-      <input type="radio" id="poopy" name="mood" value="poopy">
-      <label for="poopy">Poopy</label>
+      <div class="flex justify-end mt-6">
+        <button class="px-8 py-2.5 leading-5 text-white transition-colors
+          duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600
+          focus:outline-none focus:bg-gray-600">Save</button>
+      </div>
     </form>
-
-    <p style="text-decoration: underline;">Please Select Which Languages You
-      Expect to Master?</p>
-    <form>
-      <input type="checkbox" id="HTML" name="HTML" value="HTML">
-      <label for="HTML"> HTML</label><br>
-      <input type="checkbox" id="CSS" name="CSS" value="CSS">
-      <label for="CSS">CSS</label><br>
-      <input type="checkbox" id="Javascript" name="Javascript" value="CSS">
-      <label for="Javascript">JavaScript</label><br>
-      <input type="checkbox" id="AllTheAbove" name="AllTheAbove"
-        value="AllTheAbove">
-      <label for="AllTheAbove">All The Above</label><br><br>
-    </form>
-
-    <form style="padding: 40px;">
-      <input type="submit" value="Submit">
-    </form>
-
+  </section>
   </body>
 </html>
