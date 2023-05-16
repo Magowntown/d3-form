@@ -40,6 +40,6 @@ D3-Form is licensed under the MIT License. For more information, please refer to
 
 ## Contact
 
-Should you have any queries or suggestions, feel free to reach out to me at magowntown@example.com. 
+Should you have any queries or suggestions, feel free to reach out to me at amagown@gmail.com. 
 
 Happy coding!
